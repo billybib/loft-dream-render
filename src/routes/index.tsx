@@ -135,7 +135,7 @@ function Index() {
           </nav>
           <a
             href="#quote"
-            className="rounded-sm bg-charcoal px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory transition-opacity duration-300 hover:opacity-90"
+            className="rounded-sm bg-charcoal px-4 py-2.5 text-[10px] font-semibold whitespace-nowrap uppercase tracking-[0.14em] text-ivory transition-opacity duration-300 hover:opacity-90 sm:px-5 sm:text-[11px]"
           >
             Get a free quote
           </a>
