@@ -114,9 +114,10 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-ivory/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-baseline gap-3">
-            <span className="font-serif text-lg font-semibold tracking-wide text-charcoal">
+            <span className="font-serif text-base font-semibold tracking-wide whitespace-nowrap text-charcoal sm:text-lg">
               London Dream Lofts
             </span>
+
             <span className="hidden text-[10px] uppercase tracking-[0.22em] text-sage sm:inline">
               London
             </span>
