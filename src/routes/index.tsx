@@ -184,6 +184,44 @@ function Index() {
         </div>
       </section>
 
+      {/* TRUST BAR */}
+      <section className="border-y border-charcoal/10 bg-stone/40">
+        <div className="mx-auto max-w-7xl px-6 py-8 md:py-10">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-4 md:gap-10">
+            <div className="flex gap-3">
+              <span className="mt-1.5 h-7 w-px shrink-0 bg-brass" />
+              <div>
+                <p className="font-serif text-2xl font-semibold text-charcoal md:text-3xl">20+</p>
+                <p className="mt-0.5 text-[11px] uppercase tracking-[0.14em] text-charcoal/60">Years Experience</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="mt-1.5 h-7 w-px shrink-0 bg-brass" />
+              <div>
+                <p className="font-serif text-2xl font-semibold text-charcoal md:text-3xl">10</p>
+                <p className="mt-0.5 text-[11px] uppercase tracking-[0.14em] text-charcoal/60">Years Guarantee</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="mt-1.5 h-7 w-px shrink-0 bg-brass" />
+              <div>
+                <p className="font-serif text-lg font-semibold leading-tight text-charcoal md:text-xl">Free Survey</p>
+                <p className="mt-0.5 text-[11px] uppercase tracking-[0.14em] text-charcoal/60">&amp; written quotation</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="mt-1.5 h-7 w-px shrink-0 bg-brass" />
+              <div>
+                <p className="font-serif text-2xl font-semibold text-charcoal md:text-3xl">
+                  4.9<span className="ml-1 align-top text-xs font-normal text-charcoal/50">/5</span>
+                </p>
+                <p className="mt-0.5 text-[11px] uppercase tracking-[0.14em] text-charcoal/60">56 Google reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* INTRO */}
       <section className="bg-ivory py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:gap-20">
