@@ -153,10 +153,7 @@ function Index() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/10 via-charcoal/15 via-[70%] to-charcoal/70" />
         <div className="relative mx-auto max-w-7xl px-6 pt-32 pb-20 md:pt-52 md:pb-28">
-          <p
-            className="mb-6 text-[11px] uppercase tracking-[0.3em] text-ivory"
-            style={{ textShadow: '0 1px 12px rgba(32,35,33,0.55)' }}
-          >
+          <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-charcoal/85">
             London Loft Specialists
           </p>
           <h1 className="max-w-4xl font-serif text-5xl leading-[1.04] font-semibold text-ivory md:text-7xl">
