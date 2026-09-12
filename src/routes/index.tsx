@@ -151,15 +151,15 @@ function Index() {
           alt="Finished London loft conversion with roof light, oak floors and morning daylight"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-charcoal/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 via-charcoal/45 to-charcoal/70" />
         <div className="relative mx-auto max-w-7xl px-6 py-28 md:py-40">
           <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-brass">
-            London Loft &amp; Home Transformation Specialists
+            London Loft Specialists
           </p>
           <h1 className="max-w-4xl font-serif text-5xl leading-[1.04] font-semibold text-ivory md:text-7xl">
-            Beautiful Spaces.
+            More Space.
             <br />
-            Thoughtfully Built.
+            Beautifully Designed.
           </h1>
           <p className="mt-8 max-w-xl text-lg text-ivory/75">
             Loft conversions, extensions and renovations designed around the way you live.
@@ -178,9 +178,6 @@ function Index() {
               View our work
             </a>
           </div>
-          <p className="mt-12 text-[12px] uppercase tracking-[0.18em] text-ivory/60">
-            Experienced team · Quality craftsmanship · Fully managed projects
-          </p>
         </div>
       </section>
 
