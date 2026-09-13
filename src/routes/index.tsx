@@ -162,7 +162,7 @@ function Index() {
             Beautifully Designed.
           </h1>
           
-          <div className="mt-10 flex flex-wrap items-center gap-8">
+          <div className="mt-12 flex flex-wrap items-center gap-8">
             <a
               href="#quote"
               className="rounded-sm bg-ivory px-7 py-3.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-charcoal transition-opacity duration-300 hover:opacity-90"
