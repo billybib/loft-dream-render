@@ -151,7 +151,7 @@ function Index() {
           alt="Finished London loft conversion with roof light, oak floors and morning daylight"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/0 via-charcoal/15 via-[50%] to-charcoal/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/0 via-charcoal/15 via-[30%] to-charcoal/80" />
         <div className="relative mx-auto max-w-7xl px-6 pt-38 pb-14 md:pt-62 md:pb-18">
           <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-charcoal/85">
             London Loft Specialists
