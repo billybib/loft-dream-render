@@ -161,9 +161,7 @@ function Index() {
             <br />
             Beautifully Designed.
           </h1>
-          <p className="mt-8 max-w-xl text-lg text-ivory/75">
-            Loft conversions, extensions and renovations designed around the way you live.
-          </p>
+          
           <div className="mt-10 flex flex-wrap items-center gap-8">
             <a
               href="#quote"
