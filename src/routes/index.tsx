@@ -458,9 +458,12 @@ function Index() {
               <p className="mt-2 max-w-sm text-sm text-ivory/50">
                 Loft conversions, extensions and renovations across London.
               </p>
-              <p className="mt-4 text-sm text-ivory/60">
-                Serving Greater London · hello@londondreamsloft.co.uk
-              </p>
+              <address className="mt-5 not-italic text-sm leading-relaxed text-ivory/60">
+                <a href="tel:02081271232" className="block hover:text-ivory">0208 1271232</a>
+                <a href="mailto:info@londondreamsloft.co.uk" className="block hover:text-ivory">info@londondreamsloft.co.uk</a>
+                <span className="block">32 Church Ln, Bushwood, London</span>
+                <span className="block">E11 1HG, United Kingdom</span>
+              </address>
             </div>
             <div className="flex flex-wrap gap-8 text-sm text-ivory/60">
               <a href="#work" className="hover:text-ivory">
