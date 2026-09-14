@@ -88,7 +88,18 @@ const projects = [
     alt: "Renovated living room with sage walls, linen sofa and brass wall light",
   },
   {
-    src: project3,
+    carousel: [
+      bespokeCarousel1.url,
+      bespokeCarousel2.url,
+      bespokeCarousel3.url,
+      bespokeCarousel4.url,
+    ],
+    alts: [
+      "Luxury kitchen island with brass pendant lighting, marble worktop and bar stools",
+      "Dark contemporary kitchen with marble island, integrated appliances and statement lighting",
+      "Elegant living room with velvet sofas, geometric rug, chandelier and feature artwork",
+      "Bright entrance hallway with herringbone flooring, staircase and large framed artwork",
+    ],
     w: 1024,
     h: 1280,
     span: "md:col-span-5",
@@ -96,7 +107,7 @@ const projects = [
     ratio: "aspect-[4/5]",
     title: "Bespoke Interiors",
     label: "Spaces Designed Around You",
-    alt: "Loft bedroom with a large skylight above a timber bed",
+    alt: "Luxury kitchen island with brass pendant lighting, marble worktop and bar stools",
   },
   {
     carousel: [
