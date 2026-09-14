@@ -506,7 +506,7 @@ function Index() {
             </figure>
             <figure className="bg-stone/70 p-8">
               <blockquote className="font-serif text-lg leading-snug text-charcoal">
-                "Absolutely delighted with the new loft"
+                "Absolutely delighted with our new loft"
               </blockquote>
               <figcaption className="mt-6 text-sm text-sage">
                 Simon Lyne
