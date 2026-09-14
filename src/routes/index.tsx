@@ -10,6 +10,8 @@ import bespokeCarousel1 from "@/assets/bespoke-carousel-1.jpg.asset.json";
 import bespokeCarousel2 from "@/assets/bespoke-carousel-2.jpg.asset.json";
 import bespokeCarousel3 from "@/assets/bespoke-carousel-3.jpg.asset.json";
 import bespokeCarousel4 from "@/assets/bespoke-carousel-4.jpg.asset.json";
+import bespokeCarousel5 from "@/assets/bespoke-carousel-5.jpg.asset.json";
+import bespokeCarousel6 from "@/assets/bespoke-carousel-6.jpg.asset.json";
 import kitchenCarousel1 from "@/assets/kitchen-carousel-1.jpg.asset.json";
 import kitchenCarousel2 from "@/assets/kitchen-carousel-2.jpg.asset.json";
 import kitchenCarousel3 from "@/assets/kitchen-carousel-3.jpg.asset.json";
@@ -93,12 +95,16 @@ const projects = [
       bespokeCarousel2.url,
       bespokeCarousel3.url,
       bespokeCarousel4.url,
+      bespokeCarousel5.url,
+      bespokeCarousel6.url,
     ],
     alts: [
       "Luxury kitchen island with brass pendant lighting, marble worktop and bar stools",
       "Dark contemporary kitchen with marble island, integrated appliances and statement lighting",
       "Elegant living room with velvet sofas, geometric rug, chandelier and feature artwork",
       "Bright entrance hallway with herringbone flooring, staircase and large framed artwork",
+      "Modern shower room with blush tiles, terrazzo floor and black-framed glass enclosure",
+      "Curved black-framed shower enclosure, round marble mirror and terrazzo flooring",
     ],
     w: 1024,
     h: 1280,
