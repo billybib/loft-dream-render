@@ -427,9 +427,32 @@ function Index() {
               </figcaption>
             </figure>
           </div>
-          <p className="mt-8 text-xs text-charcoal/45">
-            Placeholder review excerpts — to be replaced with verified customer reviews.
-          </p>
+          <div className="mt-10">
+            <a
+              href="https://www.google.com/search?client=ms-android-samsung-ss&hs=TRIB&sca_esv=2e45838e39a05840&sxsrf=APpeQntAi2hikmA0QJ__EOdTlDjk-8lyNA:1789368654736&q=london+dream+lofts+reviews&uds=AJ5uw1__928SWGWkVE3B4ZcFuu6rnQsUjWHOHLDDQjODa7zui01vimYxscCsfbQafmaM0bVTGlLAMs9U7iKGXvo-C9A1P9dtH0gKIYkSNZnuwpe4z_3B3Fea7omx_s0NqWmoW-0UGTRk7H4ms06D5Z_eVHGetA27bzDjDNEUfYZaQdeuEQOho1Hdlubnq_iwnwzY_qi5sCLT9ylVja2gXJ0gWa3JlrG0E25gyr6iDAU6N9Np-41-Mg_36C_xYWOfFQeh3zwFdK-6Z5PuqVWvS-ixm2TqrOUIQgJWlBsE1IsP7-WgNoKuP-Lws1oCP2hxb8HBy9rEVSZPa8_p1qtEdACl9y8dW6N3b1cz9mN7RNbWTTIL7yClKcJGXBCYqv46hkxl-PwiT_ga8L0v0lP3u257r-4MSpl_No5u9VpqahBaXaepDPYMdeXN7EI-QytA-56bqveNz37_QaQBxbPUbcIRkAky2aLNzUr2VVqVSs8_zhwkcWgjpRq_0QRiZ8iYNjp9JzrC6ebl2bxW1y8kcn0jKEUn4KFgBg&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_yo2yYJXjsdpbmc7Wt6s_Df_B7Jtyhv5a29pXeUScm0mPGAf4NERNHOOH2iydyWN95iiNWJbxgX4WWumugcrNdZL_Dh2cJ4y-iuc-oEBD0soxUqdSg%3D%3D&sa=X&sqi=2&ved=2ahUKEwjGqabYve2WAxXgaUEAHaxfCBwQk8gLegQIGRAB&ictx=1#ebo=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border-b border-brass pb-1 text-sm font-semibold text-charcoal transition-colors duration-300 hover:text-brass"
+            >
+              More Reviews
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform duration-300 group-hover:translate-x-0.5"
+                aria-hidden="true"
+              >
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
