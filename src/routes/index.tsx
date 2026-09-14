@@ -459,7 +459,10 @@ function Index() {
               <span className="font-serif text-2xl font-semibold tracking-tight">
                 London Dream Lofts
               </span>
-            
+              <p className="mt-5 max-w-sm text-sm leading-relaxed text-ivory/60">
+                Loft conversions, extensions and renovations across London —
+                designed and built by one accountable team.
+              </p>
             </div>
 
             {/* Contact */}
@@ -500,5 +503,35 @@ function Index() {
                 </ul>
               </address>
             </div>
+
+            {/* Quick links */}
+            <div className="md:col-span-3">
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory/40">
+                Explore
+              </h3>
+              <ul className="mt-5 space-y-3 text-sm">
+                {nav.map((item) => (
+                  <li key={item}>
+                    <a
+                      href="#quote"
+                      className="text-ivory/70 transition-colors duration-200 hover:text-ivory"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-14 border-t border-ivory/10 pt-6 text-xs text-ivory/40">
+            © {new Date().getFullYear()} London Dream Lofts. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
 
             
