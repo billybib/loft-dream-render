@@ -20,6 +20,7 @@ import loftCarousel1 from "@/assets/loft-carousel-1.jpg.asset.json";
 import loftCarousel2 from "@/assets/loft-carousel-2.jpg.asset.json";
 import loftCarousel3 from "@/assets/loft-carousel-3.jpg.asset.json";
 import loftCarousel4 from "@/assets/loft-carousel-4.jpg.asset.json";
+import loftCarousel5 from "@/assets/loft-carousel-5.jpg.asset.json";
 import serviceLoft from "@/assets/service-loft.jpg";
 import serviceExtension from "@/assets/service-extension.jpg";
 import serviceRenovation from "@/assets/service-renovation.jpg";
