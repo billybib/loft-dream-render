@@ -80,7 +80,18 @@ const projects = [
     alt: "Loft bedroom with a large skylight above a timber bed",
   },
   {
-    src: project4,
+    carousel: [
+      kitchenCarousel1.url,
+      kitchenCarousel2.url,
+      kitchenCarousel3.url,
+      kitchenCarousel4.url,
+    ],
+    alts: [
+      "Shaker-style kitchen extension with grey cabinetry and herringbone floors",
+      "Modern kitchen extension with timber island, pendant lights and roof lantern",
+      "Bright kitchen extension with roof lanterns, grey units and garden doors",
+      "Dark contemporary kitchen with stone island, brass accents and feature lighting",
+    ],
     w: 1440,
     h: 900,
     span: "md:col-span-7",
