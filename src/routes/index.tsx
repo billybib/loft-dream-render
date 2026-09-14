@@ -348,7 +348,7 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-stone/60 py-20 md:py-28">
+      <section className="bg-ivory py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-12 text-[11px] uppercase tracking-[0.25em] text-brass">What we do</p>
           <div className="grid gap-6 md:grid-cols-3">
@@ -373,7 +373,7 @@ function Index() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-ivory py-20 md:py-28">
+      <section className="bg-stone/60 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-4 text-[11px] uppercase tracking-[0.25em] text-brass">
             Homeowner stories
