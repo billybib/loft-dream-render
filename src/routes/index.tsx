@@ -218,18 +218,6 @@ function Index() {
       </section>
 
 
-      {/* TRUST STRIP */}
-      <section className="border-y border-charcoal/10 bg-ivory">
-        <div className="mx-auto max-w-7xl px-6 py-6">
-          <div className="flex flex-wrap items-center gap-x-10 gap-y-3 text-[12px] uppercase tracking-[0.18em] text-sage">
-            <span className="text-charcoal/50">Experienced team</span>
-            <span>Fully managed projects</span>
-            <span>Quality craftsmanship</span>
-            <span>Clear communication</span>
-          </div>
-        </div>
-      </section>
-
       {/* PROJECT GALLERY */}
       <section id="work" className="bg-stone/60 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
