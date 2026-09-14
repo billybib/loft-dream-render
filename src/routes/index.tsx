@@ -219,7 +219,7 @@ function Index() {
 
 
       {/* PROJECT GALLERY */}
-      <section id="work" className="bg-stone/60 py-20 md:py-28">
+      <section id="work" className="bg-ivory py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 flex items-end justify-between">
             <div className="max-w-lg">
