@@ -10,6 +10,8 @@ import bespokeCarousel1 from "@/assets/bespoke-carousel-1.jpg.asset.json";
 import bespokeCarousel2 from "@/assets/bespoke-carousel-2.jpg.asset.json";
 import bespokeCarousel3 from "@/assets/bespoke-carousel-3.jpg.asset.json";
 import bespokeCarousel4 from "@/assets/bespoke-carousel-4.jpg.asset.json";
+import bespokeCarousel5 from "@/assets/bespoke-carousel-5.jpg.asset.json";
+import bespokeCarousel6 from "@/assets/bespoke-carousel-6.jpg.asset.json";
 import kitchenCarousel1 from "@/assets/kitchen-carousel-1.jpg.asset.json";
 import kitchenCarousel2 from "@/assets/kitchen-carousel-2.jpg.asset.json";
 import kitchenCarousel3 from "@/assets/kitchen-carousel-3.jpg.asset.json";
