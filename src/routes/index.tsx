@@ -506,7 +506,7 @@ function Index() {
                 Loved by Homeowners
               </h2>
             </div>
-            <div className=" mt-7 inline-flex items-center gap-2 self-start rounded-full border border-charcoal/10 bg-ivory px-3.5 py-1.5">
+            <div className=" mt-11 inline-flex items-center gap-2 self-start rounded-full border border-charcoal/10 bg-ivory px-3.5 py-1.5">
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 24 24"
