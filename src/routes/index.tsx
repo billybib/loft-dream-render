@@ -259,7 +259,7 @@ function Index() {
       </section>
 
       {/* PROCESS */}
-      <section className="bg-ivory py-20 md:py-28">
+      <section className="bg-stone/60 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-4 text-[11px] uppercase tracking-[0.25em] text-brass">How it works</p>
           <h2 className="max-w-2xl font-serif text-3xl font-semibold text-charcoal md:text-4xl">
