@@ -81,7 +81,7 @@ const projects = [
     offset: "md:mt-10",
     ratio: "aspect-[16/10]",
     title: "Extensions",
-    label: "Kitchen/open-plan transformations",
+    label: "Kitchens. Open-plan transformations",
     alt: "Open-plan kitchen extension with stone worktops and full-height garden glazing",
   },
 ];
