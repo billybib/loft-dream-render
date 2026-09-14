@@ -371,18 +371,7 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  {p.carousel ? (
-                    <Carousel slides={p.carousel} alts={p.alts} />
-                  ) : (
-                    <img
-                      src={p.src}
-                      width={p.w}
-                      height={p.h}
-                      loading="lazy"
-                      alt={p.alt}
-                      className="h-full w-full object-cover transition-transform duration-[900ms] ease-out hover:scale-[1.03]"
-                    />
-                  )}
+                  <Carousel slides={p.carousel} alts={p.alts} />
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
