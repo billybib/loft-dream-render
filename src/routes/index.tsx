@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import heroLoft from "@/assets/hero-loft.jpg";
 import project1 from "@/assets/project-1.jpg";
@@ -451,37 +452,93 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-charcoal text-ivory">
-        <div className="mx-auto max-w-7xl px-6 py-14">
-          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
-            <div>
-              <span className="font-serif text-xl font-semibold">London Dream Lofts</span>
-              <p className="mt-2 max-w-sm text-sm text-ivory/50">
-                Loft conversions, extensions and renovations across London.
+        <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+          <div className="grid gap-12 md:grid-cols-12 md:gap-8">
+            {/* Brand */}
+            <div className="md:col-span-5">
+              <span className="font-serif text-2xl font-semibold tracking-tight">
+                London Dream Lofts
+              </span>
+              <p className="mt-3 max-w-xs text-sm leading-relaxed text-ivory/50">
+                Loft conversions, extensions and renovations across London — built
+                with care, finished with precision.
               </p>
-              <address className="mt-5 not-italic text-sm leading-relaxed text-ivory/60">
-                <a href="tel:02081271232" className="block hover:text-ivory">0208 1271232</a>
-                <a href="mailto:info@londondreamsloft.co.uk" className="block hover:text-ivory">info@londondreamsloft.co.uk</a>
-                <span className="block">32 Church Ln, Bushwood, London</span>
-                <span className="block">E11 1HG, United Kingdom</span>
+            </div>
+
+            {/* Contact */}
+            <div className="md:col-span-4">
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory/40">
+                Contact
+              </h3>
+              <address className="mt-5 not-italic">
+                <ul className="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="tel:02081271232"
+                      className="group flex items-start gap-3 text-ivory/70 transition-colors duration-200 hover:text-ivory"
+                    >
+                      <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brass" aria-hidden="true" />
+                      <span>0208 1271232</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@londondreamsloft.co.uk"
+                      className="group flex items-start gap-3 text-ivory/70 transition-colors duration-200 hover:text-ivory"
+                    >
+                      <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brass" aria-hidden="true" />
+                      <span>info@londondreamsloft.co.uk</span>
+                    </a>
+                  </li>
+                  <li>
+                    <div className="flex items-start gap-3 text-ivory/70">
+                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brass" aria-hidden="true" />
+                      <span>
+                        32 Church Ln, Bushwood, London
+                        <br />
+                        E11 1HG, United Kingdom
+                      </span>
+                    </div>
+                  </li>
+                </ul>
               </address>
             </div>
-            <div className="flex flex-wrap gap-8 text-sm text-ivory/60">
-              <a href="#work" className="hover:text-ivory">
-                Our Work
-              </a>
-              <a href="#quote" className="hover:text-ivory">
-                Services
-              </a>
-              <a href="#quote" className="hover:text-ivory">
-                Contact
-              </a>
+
+            {/* Quick links */}
+            <div className="md:col-span-3">
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory/40">
+                Quick links
+              </h3>
+              <ul className="mt-5 space-y-3 text-sm text-ivory/70">
+                <li>
+                  <a href="#work" className="transition-colors duration-200 hover:text-ivory">
+                    Our Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#services" className="transition-colors duration-200 hover:text-ivory">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#process" className="transition-colors duration-200 hover:text-ivory">
+                    Process
+                  </a>
+                </li>
+                <li>
+                  <a href="#quote" className="transition-colors duration-200 hover:text-ivory">
+                    Contact
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="mt-10 flex flex-col justify-between gap-2 border-t border-ivory/10 pt-6 text-xs text-ivory/40 md:flex-row">
-            <span>© London Dream Lofts</span>
+
+          <div className="mt-14 flex flex-col justify-between gap-4 border-t border-ivory/10 pt-8 text-xs text-ivory/40 md:flex-row md:items-center">
+            <span>© {new Date().getFullYear()} London Dream Lofts</span>
             <span className="flex gap-6">
-              <a href="#quote">Privacy</a>
-              <a href="#quote">Terms</a>
+              <a href="#" className="transition-colors duration-200 hover:text-ivory">Privacy</a>
+              <a href="#" className="transition-colors duration-200 hover:text-ivory">Terms</a>
             </span>
           </div>
         </div>
