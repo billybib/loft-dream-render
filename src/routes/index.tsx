@@ -6,9 +6,14 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
+import kitchenCarousel1 from "@/assets/kitchen-carousel-1.jpg.asset.json";
+import kitchenCarousel2 from "@/assets/kitchen-carousel-2.jpg.asset.json";
+import kitchenCarousel3 from "@/assets/kitchen-carousel-3.jpg.asset.json";
+import kitchenCarousel4 from "@/assets/kitchen-carousel-4.jpg.asset.json";
 import serviceLoft from "@/assets/service-loft.jpg";
 import serviceExtension from "@/assets/service-extension.jpg";
 import serviceRenovation from "@/assets/service-renovation.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
