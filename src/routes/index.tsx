@@ -459,10 +459,7 @@ function Index() {
               <span className="font-serif text-2xl font-semibold tracking-tight">
                 London Dream Lofts
               </span>
-              <p className="mt-3 max-w-xs text-sm leading-relaxed text-ivory/50">
-                Loft conversions, extensions and renovations across London — built
-                with care, finished with precision.
-              </p>
+            
             </div>
 
             {/* Contact */}
@@ -504,45 +501,4 @@ function Index() {
               </address>
             </div>
 
-            {/* Quick links */}
-            <div className="md:col-span-3">
-              <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory/40">
-                Quick links
-              </h3>
-              <ul className="mt-5 space-y-3 text-sm text-ivory/70">
-                <li>
-                  <a href="#work" className="transition-colors duration-200 hover:text-ivory">
-                    Our Work
-                  </a>
-                </li>
-                <li>
-                  <a href="#services" className="transition-colors duration-200 hover:text-ivory">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#process" className="transition-colors duration-200 hover:text-ivory">
-                    Process
-                  </a>
-                </li>
-                <li>
-                  <a href="#quote" className="transition-colors duration-200 hover:text-ivory">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-14 flex flex-col justify-between gap-4 border-t border-ivory/10 pt-8 text-xs text-ivory/40 md:flex-row md:items-center">
-            <span>© {new Date().getFullYear()} London Dream Lofts</span>
-            <span className="flex gap-6">
-              <a href="#" className="transition-colors duration-200 hover:text-ivory">Privacy</a>
-              <a href="#" className="transition-colors duration-200 hover:text-ivory">Terms</a>
-            </span>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+            
