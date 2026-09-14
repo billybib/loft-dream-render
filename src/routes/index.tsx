@@ -497,7 +497,7 @@ function Index() {
       {/* TESTIMONIALS */}
       <section className="bg-stone/60 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mt-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div className="mb-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="mb-4 text-[11px] uppercase tracking-[0.25em] text-brass">
                 Homeowner stories
