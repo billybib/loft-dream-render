@@ -1,4 +1,6 @@
+import { useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import heroLoft from "@/assets/hero-loft.jpg";
