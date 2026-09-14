@@ -20,6 +20,7 @@ import loftCarousel1 from "@/assets/loft-carousel-1.jpg.asset.json";
 import loftCarousel2 from "@/assets/loft-carousel-2.jpg.asset.json";
 import loftCarousel3 from "@/assets/loft-carousel-3.jpg.asset.json";
 import loftCarousel4 from "@/assets/loft-carousel-4.jpg.asset.json";
+import loftCarousel5 from "@/assets/loft-carousel-5.jpg.asset.json";
 import serviceLoft from "@/assets/service-loft.jpg";
 import serviceExtension from "@/assets/service-extension.jpg";
 import serviceRenovation from "@/assets/service-renovation.jpg";
@@ -58,12 +59,14 @@ const nav = [
 const projects = [
   {
     carousel: [
+      loftCarousel5.url,
       loftCarousel1.url,
       loftCarousel2.url,
       loftCarousel3.url,
       loftCarousel4.url,
     ],
     alts: [
+      "Bright loft bedroom with skylight, double bed, black shelving and neutral styling",
       "Bright converted loft with roof windows, built-in storage and neutral carpet",
       "Pink child's loft bedroom with built-in cupboards, skylight and feature lighting",
       "Loft bedroom with deep blue feature wall, skylight and oak bed",
