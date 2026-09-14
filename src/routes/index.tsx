@@ -459,10 +459,6 @@ function Index() {
               <span className="font-serif text-2xl font-semibold tracking-tight">
                 London Dream Lofts
               </span>
-              <p className="mt-5 max-w-sm text-sm leading-relaxed text-ivory/60">
-                Loft conversions, extensions and renovations across London —
-                designed and built by one accountable team.
-              </p>
             </div>
 
             {/* Contact */}
