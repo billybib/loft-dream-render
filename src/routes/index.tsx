@@ -69,8 +69,8 @@ const projects = [
     span: "md:col-span-5",
     offset: "md:-mt-8",
     ratio: "aspect-[4/5]",
-    title: "Bespoke Spaces",
-    label: "Bespoke Interiors and Spaces",
+    title: "Bespoke Interiors",
+    label: "Spaces Designed Around You",
     alt: "Loft bedroom with a large skylight above a timber bed",
   },
   {
