@@ -226,9 +226,9 @@ function Index() {
             A Better Home.
           </h2>
           <p className="max-w-md text-lg leading-relaxed text-charcoal/70">
-            London Dream Lofts creates carefully considered loft conversions, extensions and
-            renovations for homes across the capital — managing the project from initial planning
-            and design through to the final finish, so the result feels like it always belonged.
+            A loft conversion or extension should feel like it was always 
+            meant to be part of your home. We create beautiful, practical spaces 
+            designed around the way you live.
           </p>
         </div>
       </section>
