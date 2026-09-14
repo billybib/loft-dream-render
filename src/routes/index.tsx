@@ -489,11 +489,10 @@ function Index() {
           <div className="grid gap-6 md:grid-cols-3">
             <figure className="bg-charcoal p-10 text-ivory md:col-span-2">
               <blockquote className="font-serif text-2xl leading-snug">
-                “They understood exactly what we wanted without us having to over-explain. The loft
-                feels like it was always meant to be this way.”
+                "Endrit, Valon and their team provided a great reliable service. We went with them after recommendation from a neighbour. The rest of the team were also skilled, Very happy with the outcome."
               </blockquote>
               <figcaption className="mt-8 text-sm text-ivory/60">
-                Loft conversion · London homeowner
+                Rear Loft Extension, D.k
               </figcaption>
             </figure>
             <figure className="bg-stone/70 p-8">
