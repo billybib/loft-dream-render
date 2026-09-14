@@ -453,16 +453,16 @@ function Index() {
       {/* FOOTER */}
       <footer className="bg-charcoal text-ivory">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <div className="grid gap-12 md:grid-cols-12 md:gap-8">
+          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             {/* Brand */}
-            <div className="md:col-span-5">
+            <div>
               <span className="font-serif text-2xl font-semibold tracking-tight">
                 London Dream Lofts
               </span>
             </div>
 
             {/* Contact */}
-            <div className="md:col-span-4">
+            <div>
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory/40">
                 Contact
               </h3>
@@ -500,24 +500,6 @@ function Index() {
               </address>
             </div>
 
-            {/* Quick links */}
-            <div className="md:col-span-3">
-              <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-ivory/40">
-                Explore
-              </h3>
-              <ul className="mt-5 space-y-3 text-sm">
-                {nav.map((item) => (
-                  <li key={item}>
-                    <a
-                      href="#quote"
-                      className="text-ivory/70 transition-colors duration-200 hover:text-ivory"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           <div className="mt-14 border-t border-ivory/10 pt-6 text-xs text-ivory/40">
