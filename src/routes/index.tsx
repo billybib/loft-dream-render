@@ -217,21 +217,6 @@ function Index() {
         </div>
       </section>
 
-      {/* INTRO */}
-      <section className="bg-ivory py-20 md:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:gap-20">
-          <h2 className="font-serif text-3xl leading-[1.1] font-semibold text-charcoal md:text-5xl">
-            More Than Extra Space.
-            <br />
-            A Better Home.
-          </h2>
-          <p className="max-w-md text-lg leading-relaxed text-charcoal/70">
-            A loft conversion or extension should feel like it was always 
-            meant to be part of your home. We create beautiful, practical spaces 
-            designed around the way you live.
-          </p>
-        </div>
-      </section>
 
       {/* TRUST STRIP */}
       <section className="border-y border-charcoal/10 bg-ivory">
