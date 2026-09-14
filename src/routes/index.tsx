@@ -4,8 +4,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import heroLoft from "@/assets/hero-loft.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project4 from "@/assets/project-4.jpg";
+import renovationCarousel1 from "@/assets/renovation-carousel-1.jpg.asset.json";
+import renovationCarousel2 from "@/assets/renovation-carousel-2.jpg.asset.json";
+import renovationCarousel3 from "@/assets/renovation-carousel-3.jpg.asset.json";
+import renovationCarousel4 from "@/assets/renovation-carousel-4.jpg.asset.json";
+import renovationCarousel5 from "@/assets/renovation-carousel-5.jpg.asset.json";
+import renovationCarousel6 from "@/assets/renovation-carousel-6.jpg.asset.json";
 import bespokeCarousel1 from "@/assets/bespoke-carousel-1.jpg.asset.json";
 import bespokeCarousel2 from "@/assets/bespoke-carousel-2.jpg.asset.json";
 import bespokeCarousel3 from "@/assets/bespoke-carousel-3.jpg.asset.json";
@@ -82,7 +86,22 @@ const projects = [
     alt: "Bright converted loft with industrial windows, exposed beams and oak floors",
   },
   {
-    src: project2,
+    carousel: [
+      renovationCarousel1.url,
+      renovationCarousel2.url,
+      renovationCarousel3.url,
+      renovationCarousel4.url,
+      renovationCarousel5.url,
+      renovationCarousel6.url,
+    ],
+    alts: [
+      "Modern kitchen with peninsula island, black bar stools and oak flooring",
+      "Open-plan kitchen extension with dining area and pendant lighting",
+      "Exterior courtyard with brick walls, checkerboard paving and black-framed glazing",
+      "White tiled bathroom with classic bath, patterned floor and window light",
+      "Terrazzo bathroom with sage tiles, brass fixtures and round mirror",
+      "Feature staircase with stone-clad wall, grey carpet and chrome handrail",
+    ],
     w: 1024,
     h: 1280,
     span: "md:col-span-5",
@@ -351,18 +370,7 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  {p.carousel ? (
-                    <Carousel slides={p.carousel} alts={p.alts} />
-                  ) : (
-                    <img
-                      src={p.src}
-                      width={p.w}
-                      height={p.h}
-                      loading="lazy"
-                      alt={p.alt}
-                      className="h-full w-full object-cover transition-transform duration-[900ms] ease-out hover:scale-[1.03]"
-                    />
-                  )}
+                  <Carousel slides={p.carousel} alts={p.alts} />
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
