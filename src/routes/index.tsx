@@ -105,6 +105,60 @@ const projects = [
   },
 ];
 
+function Carousel({ slides, alts }: { slides: string[]; alts?: string[] }) {
+  const [active, setActive] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const index = Math.round(el.scrollLeft / el.clientWidth);
+    setActive(Math.min(index, slides.length - 1));
+  };
+
+  const goTo = (index: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollTo({ left: index * el.clientWidth, behavior: "smooth" });
+  };
+
+  return (
+    <div className="relative h-full w-full">
+      <div
+        ref={scrollRef}
+        onScroll={handleScroll}
+        className="flex h-full w-full snap-x snap-mandatory overflow-x-auto scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {slides.map((src, i) => (
+          <div key={i} className="relative h-full w-full shrink-0 snap-start">
+            <img
+              src={src}
+              width={1440}
+              height={900}
+              loading="lazy"
+              alt={alts?.[i] ?? "Project image"}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => goTo(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            className={`h-2 w-2 rounded-full transition-colors ${
+              i === active ? "bg-ivory" : "bg-ivory/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 const services = [
   {
     src: serviceLoft,
