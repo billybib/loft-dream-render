@@ -4,8 +4,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import heroLoft from "@/assets/hero-loft.jpg";
-import project2 from "@/assets/project-2.jpg";
 import project4 from "@/assets/project-4.jpg";
+import renovationCarousel1 from "@/assets/renovation-carousel-1.jpg.asset.json";
+import renovationCarousel2 from "@/assets/renovation-carousel-2.jpg.asset.json";
+import renovationCarousel3 from "@/assets/renovation-carousel-3.jpg.asset.json";
+import renovationCarousel4 from "@/assets/renovation-carousel-4.jpg.asset.json";
+import renovationCarousel5 from "@/assets/renovation-carousel-5.jpg.asset.json";
+import renovationCarousel6 from "@/assets/renovation-carousel-6.jpg.asset.json";
 import bespokeCarousel1 from "@/assets/bespoke-carousel-1.jpg.asset.json";
 import bespokeCarousel2 from "@/assets/bespoke-carousel-2.jpg.asset.json";
 import bespokeCarousel3 from "@/assets/bespoke-carousel-3.jpg.asset.json";
