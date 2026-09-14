@@ -453,7 +453,7 @@ function Index() {
       {/* FOOTER */}
       <footer className="bg-charcoal text-ivory">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <div className="grid gap-12 md:grid-cols-12 md:gap-8">
+          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             {/* Brand */}
             <div className="md:col-span-5">
               <span className="font-serif text-2xl font-semibold tracking-tight">
