@@ -53,7 +53,18 @@ const nav = [
 
 const projects = [
   {
-    src: project1,
+    carousel: [
+      loftCarousel1.url,
+      loftCarousel2.url,
+      loftCarousel3.url,
+      loftCarousel4.url,
+    ],
+    alts: [
+      "Bright converted loft with roof windows, built-in storage and neutral carpet",
+      "Pink child's loft bedroom with built-in cupboards, skylight and feature lighting",
+      "Loft bedroom with deep blue feature wall, skylight and oak bed",
+      "Loft landing and ensuite shower room with brass handles and classic detailing",
+    ],
     w: 1440,
     h: 900,
     span: "md:col-span-7",
