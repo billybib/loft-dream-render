@@ -80,8 +80,8 @@ const projects = [
     span: "md:col-span-7",
     offset: "md:mt-10",
     ratio: "aspect-[16/10]",
-    title: "Garden Kitchen Extension",
-    label: "Side Infill & Extension",
+    title: "Extensions",
+    label: "Kitchen/open-plan transformations",
     alt: "Open-plan kitchen extension with stone worktops and full-height garden glazing",
   },
 ];
