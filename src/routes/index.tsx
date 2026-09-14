@@ -152,7 +152,7 @@ function Index() {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/0 via-charcoal/14 via-[44%] to-charcoal/680" />
-        <div className="relative mx-auto max-w-7xl px-6 pt-69 pb-7 md:pt-62 md:pb-26">
+        <div className="relative mx-auto max-w-7xl px-6 pt-69 pb-7 md:pt-74 md:pb-26">
           <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-charcoal/85">
             London Loft Specialists
           </p>
