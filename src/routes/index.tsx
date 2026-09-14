@@ -1,4 +1,6 @@
+import { useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import heroLoft from "@/assets/hero-loft.jpg";
@@ -6,9 +8,14 @@ import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
+import kitchenCarousel1 from "@/assets/kitchen-carousel-1.jpg.asset.json";
+import kitchenCarousel2 from "@/assets/kitchen-carousel-2.jpg.asset.json";
+import kitchenCarousel3 from "@/assets/kitchen-carousel-3.jpg.asset.json";
+import kitchenCarousel4 from "@/assets/kitchen-carousel-4.jpg.asset.json";
 import serviceLoft from "@/assets/service-loft.jpg";
 import serviceExtension from "@/assets/service-extension.jpg";
 import serviceRenovation from "@/assets/service-renovation.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -75,7 +82,18 @@ const projects = [
     alt: "Loft bedroom with a large skylight above a timber bed",
   },
   {
-    src: project4,
+    carousel: [
+      kitchenCarousel1.url,
+      kitchenCarousel2.url,
+      kitchenCarousel3.url,
+      kitchenCarousel4.url,
+    ],
+    alts: [
+      "Shaker-style kitchen extension with grey cabinetry and herringbone floors",
+      "Modern kitchen extension with timber island, pendant lights and roof lantern",
+      "Bright kitchen extension with roof lanterns, grey units and garden doors",
+      "Dark contemporary kitchen with stone island, brass accents and feature lighting",
+    ],
     w: 1440,
     h: 900,
     span: "md:col-span-7",
@@ -86,6 +104,60 @@ const projects = [
     alt: "Open-plan kitchen extension with stone worktops and full-height garden glazing",
   },
 ];
+
+function Carousel({ slides, alts }: { slides: string[]; alts?: string[] }) {
+  const [active, setActive] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const index = Math.round(el.scrollLeft / el.clientWidth);
+    setActive(Math.min(index, slides.length - 1));
+  };
+
+  const goTo = (index: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollTo({ left: index * el.clientWidth, behavior: "smooth" });
+  };
+
+  return (
+    <div className="relative h-full w-full">
+      <div
+        ref={scrollRef}
+        onScroll={handleScroll}
+        className="flex h-full w-full snap-x snap-mandatory overflow-x-auto scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {slides.map((src, i) => (
+          <div key={i} className="relative h-full w-full shrink-0 snap-start">
+            <img
+              src={src}
+              width={1440}
+              height={900}
+              loading="lazy"
+              alt={alts?.[i] ?? "Project image"}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => goTo(i)}
+            aria-label={`Go to slide ${i + 1}`}
+            className={`h-2 w-2 rounded-full transition-colors ${
+              i === active ? "bg-ivory" : "bg-ivory/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const services = [
   {
@@ -242,14 +314,18 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  <img
-                    src={p.src}
-                    width={p.w}
-                    height={p.h}
-                    loading="lazy"
-                    alt={p.alt}
-                    className="h-full w-full object-cover transition-transform duration-[900ms] ease-out hover:scale-[1.03]"
-                  />
+                  {p.carousel ? (
+                    <Carousel slides={p.carousel} alts={p.alts} />
+                  ) : (
+                    <img
+                      src={p.src}
+                      width={p.w}
+                      height={p.h}
+                      loading="lazy"
+                      alt={p.alt}
+                      className="h-full w-full object-cover transition-transform duration-[900ms] ease-out hover:scale-[1.03]"
+                    />
+                  )}
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
