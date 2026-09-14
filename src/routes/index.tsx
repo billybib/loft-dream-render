@@ -87,7 +87,22 @@ const projects = [
     alt: "Bright converted loft with industrial windows, exposed beams and oak floors",
   },
   {
-    src: project2,
+    carousel: [
+      renovationCarousel1.url,
+      renovationCarousel2.url,
+      renovationCarousel3.url,
+      renovationCarousel4.url,
+      renovationCarousel5.url,
+      renovationCarousel6.url,
+    ],
+    alts: [
+      "Modern kitchen with peninsula island, black bar stools and oak flooring",
+      "Open-plan kitchen extension with dining area and pendant lighting",
+      "Exterior courtyard with brick walls, checkerboard paving and black-framed glazing",
+      "White tiled bathroom with classic bath, patterned floor and window light",
+      "Terrazzo bathroom with sage tiles, brass fixtures and round mirror",
+      "Feature staircase with stone-clad wall, grey carpet and chrome handrail",
+    ],
     w: 1024,
     h: 1280,
     span: "md:col-span-5",
