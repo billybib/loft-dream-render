@@ -82,6 +82,7 @@ const projects = [
     span: "md:col-span-7",
     offset: "",
     ratio: "aspect-[16/10]",
+    fit: "contain" as const,
     title: "Open-Plan Loft Conversions",
     label: "Loft Conversion",
     alt: "Bright converted loft with industrial windows, exposed beams and oak floors",
@@ -162,7 +163,15 @@ const projects = [
   },
 ];
 
-function Carousel({ slides, alts }: { slides: string[]; alts?: string[] }) {
+function Carousel({
+  slides,
+  alts,
+  fit = "cover",
+}: {
+  slides: string[];
+  alts?: string[];
+  fit?: "cover" | "contain";
+}) {
   const [active, setActive] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -187,14 +196,17 @@ function Carousel({ slides, alts }: { slides: string[]; alts?: string[] }) {
         className="flex h-full w-full snap-x snap-mandatory overflow-x-auto scroll-smooth [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {slides.map((src, i) => (
-          <div key={i} className="relative h-full w-full shrink-0 snap-start">
+          <div
+            key={i}
+            className={`relative h-full w-full shrink-0 snap-start ${fit === "contain" ? "bg-stone" : ""}`}
+          >
             <img
               src={src}
               width={1440}
               height={900}
               loading="lazy"
               alt={alts?.[i] ?? "Project image"}
-              className="h-full w-full object-cover"
+              className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
             />
           </div>
         ))}
@@ -371,7 +383,7 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  <Carousel slides={p.carousel} alts={p.alts} />
+                  <Carousel slides={p.carousel} alts={p.alts} fit={p.fit} />
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
