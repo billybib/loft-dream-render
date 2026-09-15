@@ -75,7 +75,7 @@ const projects = [
       "Bright converted loft with roof windows, built-in storage and neutral carpet",
       "Pink child's loft bedroom with built-in cupboards, skylight and feature lighting",
       "Loft bedroom with deep blue feature wall, skylight and oak bed",
-      "Bright loft ensuite with curved black-framed shower, round mirror and terrazzo floor",
+      "Bright loft landing with open door into a white tiled ensuite, round mirror and curved black-framed shower",
     ],
     w: 1440,
     h: 900,
