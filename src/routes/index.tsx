@@ -167,10 +167,12 @@ function Carousel({
   slides,
   alts,
   fit = "cover",
+  objectPosition = "center",
 }: {
   slides: string[];
   alts?: string[];
   fit?: "cover" | "contain";
+  objectPosition?: string;
 }) {
   const [active, setActive] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
