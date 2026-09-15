@@ -383,7 +383,7 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  <Carousel slides={p.carousel} alts={p.alts} />
+                  <Carousel slides={p.carousel} alts={p.alts} fit={p.fit} />
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
