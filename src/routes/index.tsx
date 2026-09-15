@@ -82,6 +82,7 @@ const projects = [
     span: "md:col-span-7",
     offset: "",
     ratio: "aspect-[16/10]",
+    objectPosition: "center 25%",
     title: "Open-Plan Loft Conversions",
     label: "Loft Conversion",
     alt: "Bright converted loft with industrial windows, exposed beams and oak floors",
