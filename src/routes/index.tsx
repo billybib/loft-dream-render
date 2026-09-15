@@ -25,6 +25,7 @@ import loftCarousel2 from "@/assets/loft-carousel-2.jpg.asset.json";
 import loftCarousel3 from "@/assets/loft-carousel-3.jpg.asset.json";
 import loftCarousel4 from "@/assets/loft-carousel-4.jpg.asset.json";
 import loftCarousel5 from "@/assets/loft-carousel-5.jpg.asset.json";
+import loftCarousel6 from "@/assets/loft-carousel-6.jpg.asset.json";
 import serviceLoft from "@/assets/service-loft.jpg";
 import serviceExtension from "@/assets/service-extension.jpg";
 import serviceRenovation from "@/assets/service-renovation.jpg";
@@ -67,14 +68,14 @@ const projects = [
       loftCarousel1.url,
       loftCarousel2.url,
       loftCarousel3.url,
-      loftCarousel4.url,
+      loftCarousel6.url,
     ],
     alts: [
       "Bright loft bedroom with skylight, double bed, black shelving and neutral styling",
       "Bright converted loft with roof windows, built-in storage and neutral carpet",
       "Pink child's loft bedroom with built-in cupboards, skylight and feature lighting",
       "Loft bedroom with deep blue feature wall, skylight and oak bed",
-      "Loft landing and ensuite shower room with brass handles and classic detailing",
+      "Bright loft ensuite with curved black-framed shower, round mirror and terrazzo floor",
     ],
     w: 1440,
     h: 900,
