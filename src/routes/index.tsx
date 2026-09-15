@@ -438,13 +438,15 @@ function Index() {
             </div>
 
             <div className="grid items-center gap-10 md:grid-cols-2 md:gap-20">
-              <div className="order-2 border border-charcoal/10 p-8 md:order-1 md:p-10">
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="aspect-square bg-stone" />
-                  <div className="aspect-square bg-sage/40" />
-                  <div className="aspect-square bg-brass/40" />
-                </div>
-                <div className="mt-3 h-2 w-full bg-stone" />
+              <div className="order-2 border border-charcoal/10 bg-stone md:order-1">
+                <img
+                  src={designPlanElevation.url}
+                  width={1440}
+                  height={900}
+                  loading="lazy"
+                  alt="Existing and proposed architectural elevations showing a London home transformation"
+                  className="h-full w-full object-contain"
+                />
               </div>
               <div className="order-1 md:order-2">
                 <span className="font-serif text-5xl text-stone">02</span>
