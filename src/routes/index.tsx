@@ -82,6 +82,7 @@ const projects = [
     span: "md:col-span-7",
     offset: "",
     ratio: "aspect-[16/10]",
+    objectPosition: "center 25%",
     title: "Open-Plan Loft Conversions",
     label: "Loft Conversion",
     alt: "Bright converted loft with industrial windows, exposed beams and oak floors",
@@ -166,10 +167,12 @@ function Carousel({
   slides,
   alts,
   fit = "cover",
+  objectPosition = "center",
 }: {
   slides: string[];
   alts?: string[];
   fit?: "cover" | "contain";
+  objectPosition?: string;
 }) {
   const [active, setActive] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -206,6 +209,7 @@ function Carousel({
               loading="lazy"
               alt={alts?.[i] ?? "Project image"}
               className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
+              style={{ objectPosition }}
             />
           </div>
         ))}
@@ -382,7 +386,7 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  <Carousel slides={p.carousel} alts={p.alts} />
+                  <Carousel slides={p.carousel} alts={p.alts} objectPosition={p.objectPosition ?? "center"} />
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
