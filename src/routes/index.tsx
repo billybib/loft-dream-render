@@ -75,7 +75,7 @@ const projects = [
       "Bright converted loft with roof windows, built-in storage and neutral carpet",
       "Pink child's loft bedroom with built-in cupboards, skylight and feature lighting",
       "Loft bedroom with deep blue feature wall, skylight and oak bed",
-      "Bright loft ensuite with curved black-framed shower, round mirror and terrazzo floor",
+      "Bright loft landing with open door into a white tiled ensuite, round mirror and curved black-framed shower",
     ],
     w: 1440,
     h: 900,
@@ -383,7 +383,7 @@ function Index() {
             {projects.map((p) => (
               <div key={p.title} className={`col-span-12 ${p.span} ${p.offset}`}>
                 <div className={`w-full overflow-hidden ${p.ratio}`}>
-                  <Carousel slides={p.carousel} alts={p.alts} fit={p.fit} />
+                  <Carousel slides={p.carousel} alts={p.alts} fit={p.fit ?? "cover"} />
                 </div>
                 <p className="mt-3 font-serif text-lg text-charcoal">{p.title}</p>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-sage">{p.label}</p>
