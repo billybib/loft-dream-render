@@ -209,6 +209,7 @@ function Carousel({
               loading="lazy"
               alt={alts?.[i] ?? "Project image"}
               className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
+              style={{ objectPosition }}
             />
           </div>
         ))}
