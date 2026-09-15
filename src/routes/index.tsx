@@ -4,6 +4,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import heroLoft from "@/assets/hero-loft.jpg";
+import designPlanElevation from "@/assets/design-plan-elevation.png.asset.json";
 import renovationCarousel1 from "@/assets/renovation-carousel-1.jpg.asset.json";
 import renovationCarousel2 from "@/assets/renovation-carousel-2.jpg.asset.json";
 import renovationCarousel3 from "@/assets/renovation-carousel-3.jpg.asset.json";
